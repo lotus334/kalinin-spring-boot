@@ -1,4 +1,4 @@
-package com.example.core.customArrayList;
+package com.example.core.collection.customArrayList;
 
 public interface MyList {
 

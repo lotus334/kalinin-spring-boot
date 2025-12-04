@@ -1,4 +1,4 @@
-package com.example.core.notificationSender;
+package com.example.core.annotation.notificationSender;
 
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;

@@ -1,4 +1,4 @@
-package com.example.core.textFileService;
+package com.example.core.io.textFileService;
 
 import java.io.IOException;
 import java.nio.file.Files;

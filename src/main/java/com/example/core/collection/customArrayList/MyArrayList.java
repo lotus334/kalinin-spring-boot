@@ -1,4 +1,4 @@
-package com.example.core.customArrayList;
+package com.example.core.collection.customArrayList;
 
 import java.util.Arrays;
 

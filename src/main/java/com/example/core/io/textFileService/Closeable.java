@@ -1,4 +1,4 @@
-package com.example.core.textFileService;
+package com.example.core.io.textFileService;
 
 public interface Closeable {
     void close();

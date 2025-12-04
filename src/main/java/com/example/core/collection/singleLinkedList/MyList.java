@@ -1,4 +1,4 @@
-package com.example.core.singleLinkedList;
+package com.example.core.collection.singleLinkedList;
 
 public interface MyList {
 

@@ -1,4 +1,4 @@
-package com.example.core.customArrayList;
+package com.example.core.collection.customArrayList;
 
 /**
  * Задача 1: Реализация собственного ArrayList (задача встречалась в СБЕР)

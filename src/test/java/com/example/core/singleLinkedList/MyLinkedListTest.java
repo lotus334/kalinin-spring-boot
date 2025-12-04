@@ -1,5 +1,7 @@
 package com.example.core.singleLinkedList;
 
+import com.example.core.collection.singleLinkedList.MyLinkedList;
+import com.example.core.collection.singleLinkedList.MyList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
