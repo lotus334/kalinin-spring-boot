@@ -21,7 +21,7 @@ public class MyArrayList implements MyList {
 
     @Override
     public void remove(int index) {
-
+        array[index] = 0;
     }
 
     @Override

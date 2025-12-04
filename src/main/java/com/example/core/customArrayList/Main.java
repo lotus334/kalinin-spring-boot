@@ -33,5 +33,15 @@ public class Main {
         }
         System.out.println(list);
         System.out.println(list.size());
+
+        System.out.println(list.get(1));
+
+        System.out.println(list.contains(9));
+
+        for (int i = 0; i < 12; i++) {
+            list.remove(i);
+        }
+        System.out.println(list);
+        System.out.println(list.size());
     }
 }
