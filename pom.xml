@@ -25,6 +25,7 @@
 		<module>lombokToString</module>
 		<module>customSerialixation</module>
         <module>exerciseAlfaStream</module>
+        <module>forkJoinPool</module>
     </modules>
 
 	<properties>
