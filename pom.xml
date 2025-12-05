@@ -23,6 +23,7 @@
 		<module>core</module>
 		<module>lombokEqualsAndHashCode</module>
 		<module>lombokToString</module>
+		<module>customSerialixation</module>
 	</modules>
 
 	<properties>
