@@ -1,4 +1,4 @@
-package com.example.spring;
+package com.example.spring.showAllBeans;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -12,19 +12,19 @@ import java.util.Arrays;
 @SpringBootApplication
 public class DemoProjectApplication extends SpringBootServletInitializer implements CommandLineRunner {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoProjectApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(DemoProjectApplication.class, args);
+    }
 
-	@Autowired
-	private ApplicationContext appContext;
+    @Autowired
+    private ApplicationContext appContext;
 
-	@Override
-	public void run(String... args) {
-		String[] beans = appContext.getBeanDefinitionNames();
-		Arrays.sort(beans);
-		for (String bean : beans) {
-			System.out.println(bean + " of Type :: " + appContext.getBean(bean).getClass());
-		}
-	}
+    @Override
+    public void run(String... args) {
+        String[] beans = appContext.getBeanDefinitionNames();
+        Arrays.sort(beans);
+        for (String bean : beans) {
+            System.out.println(bean + " of Type :: " + appContext.getBean(bean).getClass());
+        }
+    }
 }
