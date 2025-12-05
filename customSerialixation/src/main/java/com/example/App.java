@@ -16,7 +16,7 @@ public class App {
             BufferedOutputStream bos = new BufferedOutputStream(fos); // Можно не использовать буферизацию
             ObjectOutputStream oos = new ObjectOutputStream(bos);
 
-            Item initialItem = new Item("login", "password");
+            Item initialItem = new Item("login", "password", "transientName");
             oos.writeObject(initialItem);
 
             oos.close();
@@ -24,6 +24,8 @@ public class App {
             FileInputStream fis = new FileInputStream(fileName);
             ObjectInputStream ois = new ObjectInputStream(fis);
             Item resultItem = (Item) ois.readObject();
+
+            System.out.println(resultItem);
 
             if (!Objects.equals(resultItem, initialItem)) {
                 throw new RuntimeException();
@@ -39,6 +41,7 @@ public class App {
     private static class Item implements Serializable {
         private String login;
         private String password;
+        private transient String name;
 
         @Serial
         private void writeObject(ObjectOutputStream out) throws IOException {
