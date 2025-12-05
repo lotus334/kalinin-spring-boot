@@ -22,6 +22,7 @@
 		<module>cyclicOrCircularDependency</module>
 		<module>core</module>
 		<module>lombokEqualsAndHashCode</module>
+		<module>lombokToString</module>
 	</modules>
 
 	<properties>
