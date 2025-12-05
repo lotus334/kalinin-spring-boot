@@ -30,9 +30,9 @@ public class App {
 
         System.out.println("Try to find");
 
-        // ЗДЕСЬ БУДЕТ StackOverflowError
-//        System.out.println(parentRepository.findAll().iterator().next());
-//        System.out.println(childRepository.findAll().iterator().next());
+        // ЗДЕСЬ МОГ БЫТЬ StackOverflowError
+        System.out.println(parentRepository.findAll().iterator().next());
+        System.out.println(childRepository.findAll().iterator().next());
 
         System.out.println("Done");
     }

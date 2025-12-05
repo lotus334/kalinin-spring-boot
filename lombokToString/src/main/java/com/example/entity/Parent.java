@@ -7,7 +7,7 @@ import lombok.ToString;
 
 @Entity
 @NoArgsConstructor
-@ToString
+@ToString(exclude = "child")
 public class Parent {
 
     @Id
