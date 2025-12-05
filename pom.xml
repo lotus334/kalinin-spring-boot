@@ -24,7 +24,8 @@
 		<module>lombokEqualsAndHashCode</module>
 		<module>lombokToString</module>
 		<module>customSerialixation</module>
-	</modules>
+        <module>exerciseAlfaStream</module>
+    </modules>
 
 	<properties>
 		<java.version>21</java.version>
