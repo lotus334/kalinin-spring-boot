@@ -21,6 +21,7 @@
 		<module>showAllBeans</module>
 		<module>cyclicOrCircularDependency</module>
 		<module>core</module>
+		<module>lombokEqualsAndHashCode</module>
 	</modules>
 
 	<properties>
