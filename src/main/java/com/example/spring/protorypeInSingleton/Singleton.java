@@ -49,6 +49,8 @@ public abstract class Singleton {
         return context.getBean(Prototype.class);
     }
 
+    // Для чего abstract - не знаю. Думаю он лишний, проверять лень.
+    // Класс, кстати, тоже абстрактный
     @Lookup
     protected abstract Prototype getReportBuilder();
 }
