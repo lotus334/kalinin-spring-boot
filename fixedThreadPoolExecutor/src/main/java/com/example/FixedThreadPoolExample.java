@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class App {
+public class FixedThreadPoolExample {
 
     private static final ExecutorService executorService = Executors.newFixedThreadPool(3);
     private static final Map<String, Integer> map = new ConcurrentHashMap<>();
