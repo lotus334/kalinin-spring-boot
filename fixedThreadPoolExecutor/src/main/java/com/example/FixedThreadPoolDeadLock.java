@@ -11,6 +11,7 @@ public class FixedThreadPoolDeadLock {
     public static void main(String[] args) {
         AtomicInteger i = new AtomicInteger();
 
+        // закрытие через сутки в finally
         try (ExecutorService executorService = Executors.newFixedThreadPool(2)) {
 
             System.out.println("start");
