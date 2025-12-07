@@ -27,7 +27,8 @@
         <module>exerciseAlfaStream</module>
         <module>forkJoinPool</module>
 		<module>fixedThreadPoolExecutor</module>
-	</modules>
+        <module>completableFuture</module>
+    </modules>
 
 	<properties>
 		<java.version>21</java.version>
