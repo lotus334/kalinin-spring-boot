@@ -5,7 +5,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
-public class App {
+public class MainExamples {
 
     public static void main( String[] args ) {
         CompletableFuture<Integer> completableFuture = CompletableFuture.supplyAsync(() -> {
