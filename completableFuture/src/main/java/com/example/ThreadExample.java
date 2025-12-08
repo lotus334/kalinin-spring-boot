@@ -22,7 +22,7 @@ public class ThreadExample {
         Thread.sleep(1000);
         System.out.println();
 
-        // начтён выполняться в ForkJoinPool.commonPool, но не завершится
+        // начтёт выполняться в ForkJoinPool.commonPool, но не завершится
         CompletableFuture<Void> future2 = CompletableFuture.runAsync(() -> wait(50, "runAsync"));
 
         // выполнится в потоке 3
