@@ -28,6 +28,7 @@
         <module>forkJoinPool</module>
 		<module>fixedThreadPoolExecutor</module>
         <module>completableFuture</module>
+        <module>livelock</module>
     </modules>
 
 	<properties>
