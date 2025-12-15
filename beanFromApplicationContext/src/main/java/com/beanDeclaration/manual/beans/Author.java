@@ -1,8 +1,10 @@
-package com.beansInClass.beans;
+package com.beanDeclaration.manual.beans;
 
 import lombok.Getter;
+import org.springframework.stereotype.Component;
 
 @Getter
+@Component("mark")
 public class Author {
     private final String authorName;
 

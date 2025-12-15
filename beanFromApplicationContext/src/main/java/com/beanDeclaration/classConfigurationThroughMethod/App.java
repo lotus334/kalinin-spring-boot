@@ -1,17 +1,12 @@
-package com.beansByOne;
+package com.beanDeclaration.classConfigurationThroughMethod;
 
-import com.beansByOne.beans.Author;
-import com.beansByOne.beans.Book;
+import com.beanDeclaration.classConfigurationThroughMethod.beans.Book;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class App {
     public static void main( String[] args ) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.register(Author.class);
-        context.register(Book.class);
-        context.refresh();
-
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfiguration.class);
         Book myBookBean = context.getBean(Book.class);
         System.out.println(myBookBean.getAuthor().getAuthorName());    }
 }

@@ -1,4 +1,4 @@
-package com.beansInAnnotation.beans;
+package com.beanDeclaration.manual.beans;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

@@ -1,10 +1,8 @@
-package com.beansInMain.beans;
+package com.beanDeclaration.classConfigurationThroughMethod.beans;
 
 import lombok.Getter;
-import org.springframework.stereotype.Component;
 
 @Getter
-@Component
 public class Author {
     private final String authorName;
 

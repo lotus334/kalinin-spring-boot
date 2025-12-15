@@ -1,4 +1,4 @@
-package com.beansInMain.beans;
+package com.beanDeclaration.classConfigurationThroughAnnotation.beans;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

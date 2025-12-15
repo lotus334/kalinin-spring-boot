@@ -1,6 +1,6 @@
-package com.beansInClass;
+package com.beanDeclaration.classConfigurationThroughAnnotation;
 
-import com.beansInClass.beans.Book;
+import com.beanDeclaration.classConfigurationThroughAnnotation.beans.Book;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

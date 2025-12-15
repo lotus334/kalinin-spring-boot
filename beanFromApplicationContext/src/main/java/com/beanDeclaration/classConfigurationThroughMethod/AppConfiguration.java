@@ -1,7 +1,7 @@
-package com.beansInClass;
+package com.beanDeclaration.classConfigurationThroughMethod;
 
-import com.beansInClass.beans.Author;
-import com.beansInClass.beans.Book;
+import com.beanDeclaration.classConfigurationThroughMethod.beans.Author;
+import com.beanDeclaration.classConfigurationThroughMethod.beans.Book;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

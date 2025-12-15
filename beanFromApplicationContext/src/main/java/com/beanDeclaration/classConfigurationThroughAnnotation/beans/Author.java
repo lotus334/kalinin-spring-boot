@@ -1,4 +1,4 @@
-package com.beansInAnnotation.beans;
+package com.beanDeclaration.classConfigurationThroughAnnotation.beans;
 
 import lombok.Getter;
 import org.springframework.stereotype.Component;
