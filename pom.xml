@@ -18,7 +18,7 @@
 	<modules>
 		<module>transactionalSelfInvocation</module>
 		<module>prototypeInSingleton</module>
-		<module>showAllBeans</module>
+		<module>beansShowAll</module>
 		<module>cyclicOrCircularDependency</module>
 		<module>core</module>
 		<module>lombokEqualsAndHashCode</module>
@@ -29,8 +29,9 @@
 		<module>fixedThreadPoolExecutor</module>
         <module>completableFuture</module>
         <module>livelock</module>
-        <module>getBeanFromApplicationContext</module>
-    </modules>
+        <module>beanFromApplicationContext</module>
+		<module>beansTheSame</module>
+	</modules>
 
 	<properties>
 		<java.version>21</java.version>
