@@ -1,0 +1,36 @@
+                                   ┌──────────────────────┐
+                                   │   Application Layer  │
+                                   │ (Service / UseCases) │
+                                   └───────────┬──────────┘
+                                               |
+                     ┌─────────────────────────┴─────────────────────────┐
+                     |                                                   |
+              "Repository layer"                                  "DAO layer"
+     (Spring Data / интерфейсы)                          (ручной SQL / ручной маппинг)
+                     |                                                   |
+        ┌────────────┴─────────────┐                         ┌───────────┴───────────┐
+        |                          |                         |                       |
+   Spring Data JPA            Spring Data R2DBC         JdbcTemplate            Pure JDBC
+ (JpaRepository etc.)        (Reactive SQL path)      (Spring JDBC)        (DriverManager)
+        |                          |                         |                       |
+        v                          v                         v                       v
+     JPA API                  R2DBC Client                DataSource           DriverManager
+   (EntityManager)          (DatabaseClient)                 |                       |
+        |                          |                         v                       v
+        v                          v                   Connection Pool          JDBC Driver
+   Hibernate ORM              R2DBC Driver            (Hikari/DBCP)                |
+        |                          |                         |                     |
+        v                          v                         v                     v
+     DataSource                TCP/NIO sockets            JDBC Driver          TCP/NIO sockets
+        |                          |                         |                     |
+        v                          v                         v                     v
+ Connection Pool              Database Server          TCP/NIO sockets        Database Server
+        |
+        v
+   JDBC Driver
+        |
+        v
+  TCP Socket / NIO
+        |
+        v
+  Database Server

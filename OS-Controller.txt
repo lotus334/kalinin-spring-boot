@@ -1,0 +1,27 @@
+                                 ┌──────────────────────────┐
+                                 │        Client            │
+                                 └────────────┬─────────────┘
+                                              |
+                                             TCP
+                                              |
+                    ┌─────────────────────────┴─────────────────────────┐
+                    |                                                   |
+           ServerSocket (blocking)                          ServerSocketChannel (NIO)
+                    |                                                   |
+            Thread-per-connection                              EventLoop / Selector
+                    |                                                   |
+            ┌───────┴────────┐                               ┌──────────┴──────────┐
+            |                |                               |                     |
+     Servlet Container     Custom Server               Netty / Undertow        Custom NIO
+            |                                              |
+     HttpServletRequest/Response                     HTTP Codec
+            |                                              |
+     ┌──────┴─────────┐                          ┌─────────┴─────────┐
+     |                |                          |                   |
+  HttpServlet     Raw Servlet               Spring WebFlux      Netty Handler
+     |                                           |                   |
+DispatcherServlet                         @Controller (reactive)   ChannelHandler
+     |
+@Controller / @RestController
+
+
