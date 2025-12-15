@@ -29,6 +29,7 @@
 		<module>fixedThreadPoolExecutor</module>
         <module>completableFuture</module>
         <module>livelock</module>
+        <module>getBeanFromApplicationContext</module>
     </modules>
 
 	<properties>
