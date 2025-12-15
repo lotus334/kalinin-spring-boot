@@ -32,7 +32,8 @@
         <module>beanFromApplicationContext</module>
 		<module>beansTheSame</module>
 		<module>beanLifecycle</module>
-	</modules>
+        <module>beanPostProcessorCustom</module>
+    </modules>
 
 	<properties>
 		<java.version>21</java.version>
