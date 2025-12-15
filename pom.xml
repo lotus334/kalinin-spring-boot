@@ -33,7 +33,10 @@
 		<module>beansTheSame</module>
 		<module>beanLifecycle</module>
         <module>beanPostProcessorCustom</module>
-    </modules>
+		<module>bootStarterCustom</module>
+        <module>bootStarterCustomUsage</module>
+        <module>bootStarterCustomAutoconfigure</module>
+	</modules>
 
 	<properties>
 		<java.version>21</java.version>
