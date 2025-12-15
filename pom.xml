@@ -23,7 +23,7 @@
 		<module>core</module>
 		<module>lombokEqualsAndHashCode</module>
 		<module>lombokToString</module>
-		<module>customSerialixation</module>
+		<module>customSerialization</module>
         <module>exerciseAlfaStream</module>
         <module>forkJoinPool</module>
 		<module>fixedThreadPoolExecutor</module>
