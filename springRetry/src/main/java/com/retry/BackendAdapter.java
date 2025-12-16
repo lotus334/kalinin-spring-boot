@@ -9,8 +9,8 @@ public interface BackendAdapter {
     @Retryable(retryFor = {RemoteServiceNotAvailableException.class},
             maxAttempts = 2,
             backoff = @Backoff(delay = 1000))
-    public String getBackendResponse(String param1, String param2);
+    String getBackendResponse(String param1, String param2);
 
     @Recover
-    public String getBackendResponseFallback(RemoteServiceNotAvailableException e, String param1, String param2);
+    String getBackendResponseFallback(RemoteServiceNotAvailableException e, String param1, String param2);
 }
