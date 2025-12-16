@@ -42,6 +42,7 @@
 		<module>springRetry</module>
         <module>springDevTools</module>
         <module>springAspect</module>
+        <module>springAspectLogging</module>
     </modules>
 
 	<properties>
