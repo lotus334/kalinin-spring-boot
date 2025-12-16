@@ -36,6 +36,7 @@
 		<module>bootStarterCustom</module>
         <module>bootStarterCustomUsage</module>
         <module>bootStarterCustomAutoconfigure</module>
+		<module>bootPortAndPathCustom</module>
 	</modules>
 
 	<properties>
