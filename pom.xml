@@ -40,7 +40,8 @@
 		<module>bootRestAPI</module>
 		<module>bootRestGzip</module>
 		<module>springRetry</module>
-	</modules>
+        <module>springDevTools</module>
+    </modules>
 
 	<properties>
 		<java.version>21</java.version>
