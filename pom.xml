@@ -38,6 +38,7 @@
         <module>bootStarterCustomAutoconfigure</module>
 		<module>bootPortAndPathCustom</module>
 		<module>bootRestAPI</module>
+		<module>bootRestGzip</module>
 	</modules>
 
 	<properties>
