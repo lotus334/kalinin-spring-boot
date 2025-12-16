@@ -41,6 +41,7 @@
 		<module>bootRestGzip</module>
 		<module>springRetry</module>
         <module>springDevTools</module>
+        <module>springAspect</module>
     </modules>
 
 	<properties>
