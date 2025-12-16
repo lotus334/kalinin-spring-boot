@@ -39,6 +39,7 @@
 		<module>bootPortAndPathCustom</module>
 		<module>bootRestAPI</module>
 		<module>bootRestGzip</module>
+		<module>springRetry</module>
 	</modules>
 
 	<properties>

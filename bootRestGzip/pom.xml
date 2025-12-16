@@ -7,7 +7,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>bootRestAPI</artifactId>
+    <artifactId>bootRestGzip</artifactId>
     <packaging>jar</packaging>
 
     <name>bootRestGzip</name>
