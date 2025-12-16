@@ -45,6 +45,7 @@
         <module>springAspectLogging</module>
 		<module>bootActuator</module>
 		<module>springConditional</module>
+		<module>hibernateExtendedLoggingP6Spy</module>
 	</modules>
 
 	<properties>
