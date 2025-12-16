@@ -16,7 +16,7 @@ public class Main extends SpringBootServletInitializer {
         Singleton service = context.getBean(Singleton.class);
 
         if (Objects.equals(service.getPrototype(), service.getPrototype())) {
-            System.out.println("Prototype is a prototype! Nonsense!");
+            System.out.println("Prototype is not a prototype! It's singleton! Nonsense!");
         }
 
         if (Objects.equals(service.getPrototypeWithLookup(), service.getPrototypeWithLookup())) {
