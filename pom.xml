@@ -44,6 +44,7 @@
         <module>springAspect</module>
         <module>springAspectLogging</module>
 		<module>bootActuator</module>
+		<module>springConditional</module>
 	</modules>
 
 	<properties>
