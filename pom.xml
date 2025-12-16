@@ -43,7 +43,8 @@
         <module>springDevTools</module>
         <module>springAspect</module>
         <module>springAspectLogging</module>
-    </modules>
+		<module>bootActuator</module>
+	</modules>
 
 	<properties>
 		<java.version>21</java.version>
