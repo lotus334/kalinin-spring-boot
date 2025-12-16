@@ -37,6 +37,7 @@
         <module>bootStarterCustomUsage</module>
         <module>bootStarterCustomAutoconfigure</module>
 		<module>bootPortAndPathCustom</module>
+		<module>bootRestAPI</module>
 	</modules>
 
 	<properties>
