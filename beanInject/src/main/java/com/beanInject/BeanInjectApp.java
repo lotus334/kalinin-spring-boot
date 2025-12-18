@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Example of Nullable and duplicated beans
  */
 @SpringBootApplication
-public class App implements CommandLineRunner {
+public class BeanInjectApp implements CommandLineRunner {
 
     @Inject
     private ServiceNormal serviceNormal;
@@ -37,7 +37,7 @@ public class App implements CommandLineRunner {
 
 
     public static void main(String[] args) {
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(BeanInjectApp.class, args);
     }
 
     @Override

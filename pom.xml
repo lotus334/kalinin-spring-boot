@@ -47,6 +47,7 @@
 		<module>springConditional</module>
 		<module>hibernateExtendedLoggingP6Spy</module>
 		<module>beanInject</module>
+		<module>beanFactoryPostProcessor</module>
 	</modules>
 
 	<properties>
