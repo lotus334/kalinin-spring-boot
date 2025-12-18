@@ -46,6 +46,7 @@
 		<module>bootActuator</module>
 		<module>springConditional</module>
 		<module>hibernateExtendedLoggingP6Spy</module>
+		<module>beanInject</module>
 	</modules>
 
 	<properties>
