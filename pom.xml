@@ -48,7 +48,8 @@
 		<module>hibernateExtendedLoggingP6Spy</module>
 		<module>beanInject</module>
 		<module>beanFactoryPostProcessor</module>
-	</modules>
+        <module>nPlusOne</module>
+    </modules>
 
 	<properties>
 		<java.version>21</java.version>
