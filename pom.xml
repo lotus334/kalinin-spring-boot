@@ -49,6 +49,7 @@
 		<module>beanInject</module>
 		<module>beanFactoryPostProcessor</module>
         <module>nPlusOne</module>
+        <module>springJdbcTemplate</module>
     </modules>
 
 	<properties>
