@@ -27,6 +27,8 @@ public class SpringOptimisticLockApp implements CommandLineRunner {
     public void run(String... args) throws Exception {
         seatService.createSeat();
 
+        System.out.println(seatService.findAll());
+
         try (ExecutorService executorService = Executors.newFixedThreadPool(2)) {
             Callable<Boolean> callable = () -> {
                 Seat seat = seatService.findAll().stream().findFirst().orElseThrow();
@@ -40,5 +42,7 @@ public class SpringOptimisticLockApp implements CommandLineRunner {
                 System.out.println("Поток забронировал место: " + future.get(5, java.util.concurrent.TimeUnit.SECONDS));
             }
         }
+
+        System.out.println(seatService.findAll());
     }
 }
