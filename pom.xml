@@ -52,6 +52,7 @@
         <module>springJdbcTemplate</module>
         <module>springOptimisticPessimisticLock</module>
         <module>springBasicAuth</module>
+        <module>springSecurityUserDetails</module>
     </modules>
 
 	<properties>
