@@ -14,15 +14,17 @@ public class BasicAuthApp {
     }
 
     /**
-     * Stateless
+     * Basic stateless или Form stateful используя Session, хотя можно JWT и тогда тоже stateless
      */
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(authz -> authz
+                        .requestMatchers("/login").permitAll()
                         .requestMatchers("/").authenticated()  // Только корневой URL требует аутентификации
                 )
-                .httpBasic(Customizer.withDefaults());  // Включаем базовую HTTP‑аутентификацию
+                .formLogin(Customizer.withDefaults()); // Включаем форму входа
+//                .httpBasic(Customizer.withDefaults());  // Включаем базовую HTTP‑аутентификацию
 
         return http.build();
     }
