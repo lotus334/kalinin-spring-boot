@@ -7,10 +7,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>springOptimisticLock</artifactId>
+    <artifactId>springOptimisticPessimisticLock</artifactId>
     <packaging>jar</packaging>
 
-    <name>springOptimisticLock</name>
+    <name>springOptimisticPessimisticLock</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -1,4 +1,4 @@
-package com.springOptimisticLock;
+package com.springOptimisticPessimisticLock;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -20,5 +20,5 @@ public class Seat {
     private boolean available = true;
 
     @Version
-    private long version;
+    private Long version;
 }

@@ -50,7 +50,7 @@
 		<module>beanFactoryPostProcessor</module>
         <module>nPlusOne</module>
         <module>springJdbcTemplate</module>
-        <module>springOptimisticLock</module>
+        <module>springOptimisticPessimisticLock</module>
     </modules>
 
 	<properties>
