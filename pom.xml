@@ -53,6 +53,7 @@
         <module>springOptimisticPessimisticLock</module>
         <module>springBasicAuth</module>
         <module>springSecurityUserDetails</module>
+        <module>springSecurityEntryPoint</module>
     </modules>
 
 	<properties>
