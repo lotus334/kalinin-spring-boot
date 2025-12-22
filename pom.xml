@@ -51,6 +51,7 @@
         <module>nPlusOne</module>
         <module>springJdbcTemplate</module>
         <module>springOptimisticPessimisticLock</module>
+        <module>springBasicAuth</module>
     </modules>
 
 	<properties>
