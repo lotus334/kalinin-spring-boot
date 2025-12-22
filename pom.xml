@@ -54,6 +54,7 @@
         <module>springBasicAuth</module>
         <module>springSecurityUserDetails</module>
         <module>springSecurityEntryPoint</module>
+        <module>springPatternAdapter</module>
     </modules>
 
 	<properties>
