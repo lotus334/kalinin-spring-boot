@@ -1,4 +1,4 @@
-package com.securityFilter;
+package com.securityFilter.fooFilter;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
