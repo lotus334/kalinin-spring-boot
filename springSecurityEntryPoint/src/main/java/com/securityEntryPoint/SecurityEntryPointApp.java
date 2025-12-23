@@ -29,13 +29,13 @@ public class SecurityEntryPointApp {
                     // Custom Entry Point, который выводит сообщение об ошибке и вызывает BasicAuthenticationEntryPoint. По умолчанию, Spring Security использует тут BasicAuthenticationEntryPoint.
                     AuthenticationEntryPoint firstEntiryPoint = (HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) -> {
                         authException.printStackTrace();
-                        basicAuthenticationEntryPoint.commence(request, response, authException);
+                        basicAuthenticationEntryPoint.commence(request, response, authException); // Можно передать HttpStatusEntryPoint, тогда будет возвращаться статус ошибки после логирования стека ошибки
                     };
                     auth.authenticationEntryPoint(firstEntiryPoint);
                 })
                 .authorizeHttpRequests(auth -> auth.anyRequest().authenticated())
 
-                // Можно передать HttpStatusEntryPoint, тогда будет возвращаться статус ошибки после логирования стека ошибки
+                // Или тут можно передать HttpStatusEntryPoint, тогда будет возвращаться статус ошибки после логирования стека ошибки. Запутался
                 .exceptionHandling(auth -> auth.authenticationEntryPoint(basicAuthenticationEntryPoint))
 
                 .build();
