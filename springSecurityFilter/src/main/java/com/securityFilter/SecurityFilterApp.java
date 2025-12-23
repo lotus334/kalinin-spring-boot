@@ -1,6 +1,5 @@
 package com.securityFilter;
 
-import com.securityFilter.filter.HexConfigurer;
 import com.securityFilter.filter.NewHexConfigurer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
