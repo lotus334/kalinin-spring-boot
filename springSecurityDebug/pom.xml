@@ -7,10 +7,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>springSecurityUserDetails</artifactId>
+    <artifactId>springSecurityDebug</artifactId>
     <packaging>jar</packaging>
 
-    <name>springSecurityUserDetails</name>
+    <name>springSecurityDebug</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
