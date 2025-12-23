@@ -1,4 +1,4 @@
-package com.securityUsersDB;
+package com.securityCustomUserDetailsService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,9 +8,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import javax.sql.DataSource;
 
 @SpringBootApplication
-public class SecurityUsersDBApp {
+public class CustomUserDetailsServiceApp {
     public static void main(String[] args) {
-        SpringApplication.run(SecurityUsersDBApp.class, args);
+        SpringApplication.run(CustomUserDetailsServiceApp.class, args);
     }
 
     @Bean

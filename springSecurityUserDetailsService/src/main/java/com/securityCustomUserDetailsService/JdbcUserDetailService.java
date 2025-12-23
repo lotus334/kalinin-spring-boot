@@ -1,4 +1,4 @@
-package com.securityUsersDB;
+package com.securityCustomUserDetailsService;
 
 import org.springframework.jdbc.core.SqlParameter;
 import org.springframework.jdbc.object.MappingSqlQuery;
