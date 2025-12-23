@@ -1,6 +1,7 @@
 package com.securityFilter;
 
 import com.securityFilter.filter.HexConfigurer;
+import com.securityFilter.filter.NewHexConfigurer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -16,6 +17,9 @@ public class SecurityFilterApp {
         SpringApplication.run(SecurityFilterApp.class, args);
     }
 
+    /**
+     * Предпочтительно использовать AuthenticationFilter и в нём AuthenticationConverter
+     */
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) {
 
@@ -24,7 +28,8 @@ public class SecurityFilterApp {
                         .requestMatchers("/error").permitAll()
                         .anyRequest().authenticated())
 //                .addFilterBefore(new DisableEncodeUrlFilter(), DisableEncodeUrlFilter.class) // простой фильтр-пустышка
-                .apply(new HexConfigurer());
+//                .apply(new HexConfigurer()) // Нужно постараться не создавать Configurer на основе кастомного фильтра, не расширяющего AuthenticationFilter
+                .apply(new NewHexConfigurer());
 
         return http.build();
     }
