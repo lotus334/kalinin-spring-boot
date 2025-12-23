@@ -1,0 +1,32 @@
+Запрос проходит: SecurityFilterChain → цепочка Filter → AuthenticationManager → AccessDecisionManager → контроллер.
+
+При ошибке аутентификации: ExceptionTranslationFilter → EntryPoint.
+
+Конфигурация: HttpSecurity + AbstractHttpConfigurer → сборка цепочки фильтров.
+
+
+
+HttpServletRequest/Response
+      ↓
+[SecurityFilterChain]
+      ↓ (выбирает подходящий фильтр-цепь)
+[HttpSecurity] ← конфигурация безопасности
+      ↓ (строит цепочку фильтров)
+[AbstractHttpConfigurer] ← базовый класс для конфигурирования HTTP-безопасности
+      ↓ (конкретные конфигураторы)
+[OAuth2ClientConfigurer]   [OAuth2ResourceServerConfigurer]   [FormLoginConfigurer] ...
+      ↓
+[Filter] (множество фильтров, например:)
+  │   ├── UsernamePasswordAuthenticationFilter
+  │   ├── OAuth2LoginAuthenticationFilter
+  │   ├── JwtAuthenticationFilter
+  │   ├── CsrfFilter
+  │   └── ...
+  ↓
+[AuthenticationManager] → [AuthenticationProvider] → [UserDetailsService]
+      ↓
+[AccessDecisionManager] → проверяет права доступа
+      ↓
+[EntryPoint] (например, LoginUrlAuthenticationEntryPoint)
+      ↓
+HttpServletResponse (перенаправление на логин / 401 / 403)
