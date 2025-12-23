@@ -34,7 +34,10 @@ public class SecurityEntryPointApp {
                     auth.authenticationEntryPoint(firstEntiryPoint);
                 })
                 .authorizeHttpRequests(auth -> auth.anyRequest().authenticated())
+
+                // Можно передать HttpStatusEntryPoint, тогда будет возвращаться статус ошибки после логирования стека ошибки
                 .exceptionHandling(auth -> auth.authenticationEntryPoint(basicAuthenticationEntryPoint))
+
                 .build();
 
     }
