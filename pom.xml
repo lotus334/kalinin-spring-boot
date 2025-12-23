@@ -57,6 +57,7 @@
 		<module>springSecurityUserDetailsService</module>
         <module>springPatternAdapter</module>
 		<module>springSecurityDebug</module>
+		<module>springSecurityCustomHttpConfigurer</module>
 	</modules>
 
 	<properties>
