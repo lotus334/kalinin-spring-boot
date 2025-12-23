@@ -51,11 +51,12 @@
         <module>nPlusOne</module>
         <module>springJdbcTemplate</module>
         <module>springOptimisticPessimisticLock</module>
-        <module>springBasicAuth</module>
+        <module>springSecurityBasicAuth</module>
         <module>springSecurityUserDetails</module>
         <module>springSecurityEntryPoint</module>
         <module>springPatternAdapter</module>
-    </modules>
+		<module>springSecurityUsersDB</module>
+	</modules>
 
 	<properties>
 		<java.version>21</java.version>
